@@ -49,7 +49,7 @@ const About = () => {
                 { name: 'VsCode' },
                 { name: 'Github'},
                 { name: 'Google Colab'},
-                { name: 'Microsoft Office(Word, Excel, PowerPoint)'},
+                { name: 'Microsoft Azure, Microsoft Office(Word, Excel, PowerPoint)'},
                 { name: 'PyCharm, IDLE(Python)'},
                 { name: 'MySQL Workbench, MongoDB Compass'},
                 { name: 'Jupyter Notebook, Anaconda Navigator, RapidMiner tool'},

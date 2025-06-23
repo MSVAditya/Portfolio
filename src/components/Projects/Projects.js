@@ -31,8 +31,8 @@ const Projects = () => {
       description: 'A responsive portfolio website built with React and modern CSS.',
       tags: ['React', 'CSS3', 'Responsive Design'],
       image: process.env.PUBLIC_URL + '/images/Proj3.png',
-      github: '#',
-      demo: '#',
+      github: 'https://github.com/MSVAditya/Portfolio',
+      demo: 'https://msvaditya.github.io/Portfolio/',
     },
     {
       id: 4,
