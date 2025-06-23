@@ -1,0 +1,186 @@
+.about-section {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+  color: #111827;
+  background-image: url("/public/images/BG/AL.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.dark .about-section {
+  background-color: #1f2937;
+  color: #f9fafb;
+  background-image: url("/public/images/BG/AD.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+  position: relative;
+  display: inline-block;
+}
+
+.dark .section-title {
+  color: #f9fafb;
+}
+
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  margin: 0 auto 1rem;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.dark .section-subtitlee {
+  color: #fbfafa;
+}
+
+.about-content {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.dark .about-text h3 {
+  color: #f9fafb;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.dark .about-text p {
+  color: #d1d5db;
+}
+
+.personal-info {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.info-item {
+  margin-bottom: 1rem;
+}
+
+.info-label {
+  display: block;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.dark .info-label {
+  color: #e5e7eb;
+}
+
+.info-value {
+  color: #4b5563;
+  display: block;
+}
+
+.dark .info-value {
+  color: #9ca3af;
+}
+
+.info-value.available {
+  color: #10b981;
+  font-weight: 500;
+}
+
+
+.skills-preview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.dark .skills-preview h3 {
+  color: #f9fafb;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: left;
+}
+
+.skill-namee {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.dark .skill-namee {
+  color: #e5e7eb;
+}
+
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .skills-preview {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .personal-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-preview {
+    padding: 1.5rem;
+  }
+}
