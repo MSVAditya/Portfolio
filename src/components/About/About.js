@@ -25,7 +25,7 @@ const About = () => {
             <div className="personal-info">
               <div className="info-item">
                 <span className="info-label">Name:</span>
-                <span className="info-value">Mandva. Sai Venkata Aditya Vardhan</span>
+                <span className="info-value">Mandava. Sai Venkata Aditya Vardhan</span>
               </div>
               <div className="info-item">
                 <span className="info-label">Email:</span>
