@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import './Projects.css';
 
 const Projects = () => {
-  const activeFilter = useState('All');
+  const [activeFilter] = useState('All');
 
   const projects = [
     {
