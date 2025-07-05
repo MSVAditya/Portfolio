@@ -177,7 +177,7 @@ const Home = () => {
           >
             <div className="image-wrapper">
               <div className="placeholder-image">
-                <img src={process.env.PUBLIC_URL + '/images/Myphoto.jpg'} alt='Your Snap' className='profile-photo'/>
+                <img src={process.env.PUBLIC_URL + '/images/MyPhoto.png'} alt='Your Snap' className='profile-photo'/>
               </div>
             </div>
           </div>
