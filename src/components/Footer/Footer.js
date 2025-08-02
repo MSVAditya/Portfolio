@@ -40,7 +40,8 @@ const Footer = () => {
       title: 'More',
       links: [
         { name: 'Education', url: '#education' },
-        { name: 'Experience', url: '#internships' },
+        { name: 'Internships', url: '#internships' },
+        { name: 'Achievements', url: '#achievements' },
         { name: 'Certifications', url: '#certifications' },
         { name: 'Contact', url: '#contact' }
       ]
