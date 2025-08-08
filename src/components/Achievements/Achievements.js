@@ -61,13 +61,13 @@ const Achievements = () => {
     },
     {
       id: 2,
-      title: 'Shoth India Invitational Karate Championship (2018)',
+      title: 'South India Invitational Karate Championship (2018)',
       description: 'Achieved first place in a prestigious karate championship, reflecting dedication and skill in sports.',
       certificateLink: 'images/NA2.jpg'
     },
     {
       id: 3,
-      title: 'Completed Black Belt Training',
+      title: 'Completed Black Belt Training in Karate (2019)',
       description: 'Earned a black belt in karate, marking a high level of discipline, strength, and mastery in martial arts.',
       certificateLink: 'images/NA3.jpg'
     },

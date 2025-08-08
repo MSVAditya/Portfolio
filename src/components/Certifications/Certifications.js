@@ -53,7 +53,7 @@ const Certifications = () => {
     {
       id: 7,
       title: 'Problem Solving through Programming In C',
-      issuer: 'NPETL, IIT Kharagpur',
+      issuer: 'NPTEL, IIT Kharagpur',
       link: 'https://drive.google.com/file/d/1KT5s_yaASAkerAxFVUdLXvh_ZaQBgx_8/view?usp=sharing',
       image: process.env.PUBLIC_URL + '/images/Cert5.png'
     },
