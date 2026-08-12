@@ -137,7 +137,7 @@
   align-items: center;
 }
 
-.profile-photo{
+.profile-photo {
   width: 350px;
   height: 350px;
   border-radius: 50%;
@@ -206,12 +206,19 @@
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-10px);
   }
+
   60% {
     transform: translateY(-5px);
   }
@@ -224,21 +231,21 @@
     text-align: center;
     padding-top: 2rem;
   }
-  
+
   .home-content {
     max-width: 100%;
     margin-bottom: 3rem;
   }
-  
+
   .description {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .cta-buttons {
     justify-content: center;
   }
-  
+
   .profile-image {
     width: 280px;
     height: 280px;
@@ -249,24 +256,24 @@
   .home-section {
     padding: 5rem 1.5rem 4rem;
   }
-  
+
   .title {
     font-size: 2.5rem;
   }
-  
+
   .description {
     font-size: 1rem;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .cta-button {
     width: 100%;
   }
-  
+
   .profile-image {
     width: 240px;
     height: 240px;
@@ -313,5 +320,3 @@
     justify-content: center;
   }
 }
-
-

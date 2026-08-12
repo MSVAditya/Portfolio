@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { FaHackerrank} from 'react-icons/fa';
+import { FaHackerrank } from 'react-icons/fa';
 import { BsCcCircleFill } from "react-icons/bs";
 import { SiCodeforces, SiLeetcode } from "react-icons/si";
 import { IoIosLink } from "react-icons/io";
@@ -66,7 +66,7 @@ const Home = () => {
 
   // Typewriter effect for the subtitle
   useEffect(() => {
-    const roles = ['Full Stack Developer', 'Problem Solver', 'Tech Lover'];
+    const roles = ['Full-Stack AI Developer', 'Software Engineer', 'Python Developer', 'LLM & RAG Developer', 'AI/ML Engineer', 'Cloud Engineer', 'Problem Solver', 'Tech Lover', 'Competitive Programmer'];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -177,7 +177,7 @@ const Home = () => {
           >
             <div className="image-wrapper">
               <div className="placeholder-image">
-                <img src={process.env.PUBLIC_URL + '/images/MyPhoto.png'} alt='Your Snap' className='profile-photo'/>
+                <img src={process.env.PUBLIC_URL + '/images/MyPhoto.png'} alt='Your Snap' className='profile-photo' />
               </div>
             </div>
           </div>

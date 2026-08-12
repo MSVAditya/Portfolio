@@ -21,6 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .logo a {
@@ -30,6 +31,7 @@
   text-decoration: none;
   transition: color 0.3s ease;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .dark .logo a {
@@ -111,7 +113,7 @@
   .navbar-container {
     padding: 1rem;
   }
-  
+
   .nav-links {
     display: none;
     position: absolute;
@@ -123,19 +125,19 @@
     padding: 1rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
-  
+
   .dark .nav-links {
     background-color: #111827;
   }
-  
+
   .nav-links.active {
     display: flex;
   }
-  
+
   .nav-link {
     padding: 0.75rem 1rem;
   }
-  
+
   .theme-toggle {
     margin-left: auto;
     margin-right: 1rem;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaUniversity, FaSchool } from 'react-icons/fa';
+import { FaUniversity, FaSchool } from 'react-icons/fa';
 import './Education.css';
 
 const Education = () => {
@@ -9,7 +9,7 @@ const Education = () => {
       degree: 'B.Tech[HONORS] in Information Technology',
       institution: 'Prasad V. Potluri Siddhartha Institute of Technology',
       year: '2022 - 2026',
-      CGPA: '8.7/10',
+      CGPA: '8.8/10',
       icon: <FaUniversity className="education-icon" />
     },
     {
@@ -26,7 +26,7 @@ const Education = () => {
       institution: 'Narayana E-Techno School',
       year: '2019 - 2020',
       CGPA: '10/10',
-      icon: <FaSchool  className="education-icon" />
+      icon: <FaSchool className="education-icon" />
     },
   ];
 
@@ -60,7 +60,7 @@ const Education = () => {
           <p className="section-subtitle">My Academic Journey</p>
         </div>
 
-        <div 
+        <div
           className="education-timeline"
           variants={containerVariants}
           initial="hidden"
@@ -68,7 +68,7 @@ const Education = () => {
           viewport={{ once: true }}
         >
           {educationData.map((education, index) => (
-            <div 
+            <div
               key={education.id}
               className={`education-item ${index % 2 === 0 ? 'left' : 'right'}`}
               variants={itemVariants}

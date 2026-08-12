@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
+import Publications from './components/Publications/Publications';
 import Education from './components/Education/Education';
 import Internships from './components/Internships/Internships';
 import Achievements from './components/Achievements/Achievements';
@@ -28,6 +29,7 @@ function App() {
   const [aboutRef, aboutInView] = useInView(observerOptions);
   const [skillsRef, skillsInView] = useInView(observerOptions);
   const [projectsRef, projectsInView] = useInView(observerOptions);
+  const [publicationsRef, publicationsInView] = useInView(observerOptions);
   const [educationRef, educationInView] = useInView(observerOptions);
   const [internshipsRef, internshipsInView] = useInView(observerOptions);
   const [achievementsRef, achievementsInView] = useInView(observerOptions);
@@ -40,7 +42,7 @@ function App() {
       const currentScroll = window.scrollY + 100; // Adjust this offset as needed
       
       // Get all section elements
-      const sections = ['home', 'about', 'skills', 'projects', 'education', 'internships', 'achievements', 'certifications', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'internships', 'publications', 'education', 'certifications', 'achievements', 'contact'];
       
       // Find the section that's currently in view
       let currentSection = 'home';
@@ -82,10 +84,11 @@ function App() {
           <div ref={aboutRef}><About id="about" /></div>
           <div ref={skillsRef}><Skills id="skills" /></div>
           <div ref={projectsRef}><Projects id="projects" /></div>
-          <div ref={educationRef}><Education id="education" /></div>
           <div ref={internshipsRef}><Internships id="internships" /></div>
-          <div ref={achievementsRef}><Achievements id="achievements" /></div>
+          <div ref={publicationsRef}><Publications id="publications" /></div>
+          <div ref={educationRef}><Education id="education" /></div>
           <div ref={certificationsRef}><Certifications id="certifications" /></div>
+          <div ref={achievementsRef}><Achievements id="achievements" /></div>
           <div ref={contactRef}><Contact id="contact" /></div>
         </main>
         <Footer />
