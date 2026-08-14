@@ -1,16 +1,10 @@
 .achievements-section {
   padding: 6rem 2rem;
-  background-color: #f8f9fa;
-  background-image: url("/public/images/BG/ACL.jpeg");
-  background-size: cover;
-  background-position: center;
+  background-color: transparent;
 }
 
 .dark .achievements-section {
-  background-color: #1f2937;
-  background-image: url("/public/images/BG/ACD.jpeg");
-  background-size: cover;
-  background-position: center;
+  background-color: transparent;
 }
 
 .section-header {

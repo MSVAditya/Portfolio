@@ -56,11 +56,133 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   color: var(--text-primary);
-  background-color: var(--bg-primary);
+  background-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease;
   line-height: 1.7;
+}
+
+/* ============================================================
+   GLOBAL MESH GRADIENT BACKGROUND SYSTEM
+   Inspired by Linear.app / Vercel.com / Stripe.com
+   Pure CSS — no images, no JS, no WebGL
+   ============================================================ */
+
+/* Blob drift animations — comment out animation-name below to disable
+   if Lighthouse flags them on low-end devices */
+@keyframes mesh-drift-1 {
+  0%, 100% { transform: translate(0%, 0%) scale(1); }
+  33%       { transform: translate(3%, -4%) scale(1.05); }
+  66%       { transform: translate(-2%, 3%) scale(0.97); }
+}
+@keyframes mesh-drift-2 {
+  0%, 100% { transform: translate(0%, 0%) scale(1); }
+  40%       { transform: translate(-4%, 3%) scale(1.04); }
+  75%       { transform: translate(2%, -3%) scale(0.98); }
+}
+@keyframes mesh-drift-3 {
+  0%, 100% { transform: translate(0%, 0%) scale(1); }
+  50%       { transform: translate(3%, 4%) scale(1.06); }
+}
+
+/* Fixed background canvas */
+.mesh-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-color: #f9fafb;
+  transition: background-color 0.4s ease;
+}
+.dark .mesh-bg {
+  background-color: #0f172a;
+}
+
+/* Shared blob styles */
+.mesh-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* Blob 1 — top-left, primary blue */
+.mesh-blob-1 {
+  width: 55vw;
+  height: 55vw;
+  max-width: 800px;
+  max-height: 800px;
+  top: -15%;
+  left: -10%;
+  background: radial-gradient(circle, #2563eb, #3b82f6);
+  opacity: 0.06;
+  animation-name: mesh-drift-1;
+  animation-duration: 28s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.dark .mesh-blob-1 {
+  opacity: 0.20;
+}
+
+/* Blob 2 — bottom-right, secondary blue */
+.mesh-blob-2 {
+  width: 50vw;
+  height: 50vw;
+  max-width: 700px;
+  max-height: 700px;
+  bottom: -10%;
+  right: -12%;
+  background: radial-gradient(circle, #3b82f6, #60a5fa);
+  opacity: 0.05;
+  animation-name: mesh-drift-2;
+  animation-duration: 24s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.dark .mesh-blob-2 {
+  opacity: 0.16;
+}
+
+/* Blob 3 — center-left, deep blue accent */
+.mesh-blob-3 {
+  width: 35vw;
+  height: 35vw;
+  max-width: 500px;
+  max-height: 500px;
+  top: 40%;
+  left: 5%;
+  background: radial-gradient(circle, #1d4ed8, transparent);
+  opacity: 0.04;
+  animation-name: mesh-drift-3;
+  animation-duration: 32s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.dark .mesh-blob-3 {
+  opacity: 0.14;
+}
+
+/* Fine dot-grid texture overlay */
+.mesh-grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(17, 24, 39, 0.045) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
+.dark .mesh-grid {
+  background-image: radial-gradient(rgba(248, 250, 252, 0.04) 1.5px, transparent 1.5px);
+}
+
+/* Respect user motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .mesh-blob {
+    animation: none;
+  }
 }
 
 /* Typography */

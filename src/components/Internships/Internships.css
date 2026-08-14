@@ -1,20 +1,14 @@
 .internships-section {
   padding: 4rem 0;
-  background-color: #f8fafc;
+  background-color: transparent;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("/public/images/BG/IL.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .dark .internships-section {
-  background-color: #0f172a;
+  background-color: transparent;
   color: #f1f5f9;
-  background-image: url("/public/images/BG/ID.avif");
-  background-size: cover;
-  background-position: center;
 }
 
 .container {

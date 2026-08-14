@@ -78,6 +78,13 @@ function App() {
   return (
     <ThemeProvider>
       <div className="app">
+        {/* Global animated mesh gradient background */}
+        <div className="mesh-bg" aria-hidden="true">
+          <div className="mesh-blob mesh-blob-1" />
+          <div className="mesh-blob mesh-blob-2" />
+          <div className="mesh-blob mesh-blob-3" />
+          <div className="mesh-grid" />
+        </div>
         <Navbar activeSection={activeSection} />
         <main>
           <div ref={homeRef}><Home id="home" /></div>
