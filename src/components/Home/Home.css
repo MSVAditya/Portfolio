@@ -4,22 +4,10 @@
   flex-direction: column;
   justify-content: center;
   padding: 6rem 2rem 4rem;
-  background-color: #f9fafb;
-  background-image: url("/public/images/BG/HL.jpg");
-  background-size: cover;
-  background-position: center;
-  color: #111827;
+  background-color: var(--page-background);
+  color: var(--text-primary);
   position: relative;
   overflow: hidden;
-}
-
-.dark .home-section {
-  background-color: #111827;
-  background-image: url("/public/images/BG/HD.jpg");
-  background-size: cover;
-  background-position: center;
-
-  color: #f9fafb;
 }
 
 .home-container {

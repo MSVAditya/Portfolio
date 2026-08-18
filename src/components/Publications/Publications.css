@@ -1,17 +1,7 @@
 .publications-section {
   padding: 6rem 2rem;
-  background-color: var(--bg-secondary);
-  background-image: url("/public/images/BG/PUL.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.dark .publications-section {
-  background-color: #111827;
-  color: #f9fafb;
-  background-image: url("/public/images/BG/PUD.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: var(--page-background);
+  color: var(--text-primary);
 }
 
 .publications-grid {
@@ -21,20 +11,10 @@
 }
 
 .publication-card {
-  background-color: var(--bg-primary);
-  border-radius: var(--border-radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   height: 100%;
-  border: 1px solid var(--border-color);
-}
-
-.publication-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
 }
 
 .publication-content {
