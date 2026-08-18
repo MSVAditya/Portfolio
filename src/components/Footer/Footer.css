@@ -1,15 +1,10 @@
 .footer {
-  background-color: #ffffff;
-  color: #111827;
+  background-color: var(--page-background);
+  color: var(--text-primary);
   font-size: 1rem;
   line-height: 1.6;
   position: relative;
   overflow: hidden;
-}
-
-.dark .footer {
-  background-color: #111827;
-  color: #f9fafb;
 }
 
 .container {
@@ -185,11 +180,8 @@
 .footer-bottom {
   padding: 1.5rem 0;
   text-align: center;
-  background-color: #f9fafb;
-}
-
-.dark .footer-bottom {
-  background-color: #1f2937;
+  background-color: var(--page-background);
+  border-top: var(--card-border);
 }
 
 .footer-copyright {

@@ -1,20 +1,9 @@
 .contact-section {
   padding: 6rem 2rem;
-  background-color: #ffffff;
-  color: #111827;
+  background-color: var(--page-background);
+  color: var(--text-primary);
   position: relative;
   overflow: hidden;
-  background-image: url("/public/images/BG/COL.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.dark .contact-section {
-  background-color: #111827;
-  color: #f9fafb;
-  background-image: url("/public/images/BG/COD.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .container {
@@ -69,15 +58,7 @@
 
 .contact-info {
   padding: 2rem;
-  border-radius: 0.75rem;
-  background-color: #f9fafb;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   height: fit-content;
-}
-
-.dark .contact-info {
-  background-color: #1f2937;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
 .contact-info-title {
@@ -173,14 +154,6 @@
 
 .contact-form {
   padding: 2rem;
-  border-radius: 0.75rem;
-  background-color: #f9fafb;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-.dark .contact-form {
-  background-color: #1f2937;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
 .form-group {
@@ -192,17 +165,11 @@
   width: 100%;
   padding: 1rem 1rem 0.5rem;
   font-size: 1rem;
-  border: 1px solid #e5e7eb;
+  border: var(--card-border);
   border-radius: 0.5rem;
-  background-color: #ffffff;
-  color: #111827;
+  background-color: var(--page-background);
+  color: var(--text-primary);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.dark .form-control {
-  background-color: #111827;
-  border-color: #374151;
-  color: #f9fafb;
 }
 
 .form-control:focus {

@@ -1,18 +1,7 @@
 .skills-section {
   padding: 6rem 2rem;
-  background-color: #f9fafb;
-  color: #111827;
-  background-image: url("/public/images/BG/SL.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.dark .skills-section {
-  background-color: #111827;
-  color: #f9fafb;
-  background-image: url("/public/images/BG/SD.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: var(--page-background);
+  color: var(--text-primary);
 }
 
 .container {
@@ -63,25 +52,7 @@
 }
 
 .category {
-  background-color: #ffffff;
-  border-radius: 0.75rem;
   padding: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.dark .category {
-  background-color: #1f2937;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-}
-
-.category:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.dark .category:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
 .category-title {
@@ -114,25 +85,16 @@
 }
 
 .skill-card {
-  background-color: #f9fafb;
+  background-color: var(--page-background);
   border-radius: 0.5rem;
   padding: 1.5rem;
+  border: var(--card-border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #e5e7eb;
-}
-
-.dark .skill-card {
-  background-color: #111827;
-  border-color: #374151;
 }
 
 .skill-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-.dark .skill-card:hover {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--card-shadow);
 }
 
 .skill-header {
