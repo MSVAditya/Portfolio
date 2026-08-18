@@ -4,14 +4,21 @@
   flex-direction: column;
   justify-content: center;
   padding: 6rem 2rem 4rem;
-  background-color: transparent;
+  background-color: #f9fafb;
+  background-image: url("/public/images/BG/HL.jpg");
+  background-size: cover;
+  background-position: center;
   color: #111827;
   position: relative;
   overflow: hidden;
 }
 
 .dark .home-section {
-  background-color: transparent;
+  background-color: #111827;
+  background-image: url("/public/images/BG/HD.jpg");
+  background-size: cover;
+  background-position: center;
+
   color: #f9fafb;
 }
 

@@ -1,14 +1,20 @@
 .internships-section {
   padding: 4rem 0;
-  background-color: transparent;
+  background-color: #f8fafc;
   min-height: 100vh;
   display: flex;
   align-items: center;
+  background-image: url("/public/images/BG/IL.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .dark .internships-section {
-  background-color: transparent;
+  background-color: #0f172a;
   color: #f1f5f9;
+  background-image: url("/public/images/BG/ID.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -177,28 +183,28 @@
   .internships-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .show-more-container {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  
+
 }
 
 @media (max-width: 480px) {
   .section-title {
     font-size: 2rem;
   }
-  
+
   .section-subtitle {
     font-size: 1rem;
   }
-  
+
   .internship-role {
     font-size: 1.125rem;
   }
-  
+
   .internships-section {
     padding: 3rem 1rem;
   }

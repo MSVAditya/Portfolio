@@ -1,6 +1,17 @@
 .publications-section {
   padding: 6rem 2rem;
   background-color: var(--bg-secondary);
+  background-image: url("/public/images/BG/PUL.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.dark .publications-section {
+  background-color: #111827;
+  color: #f9fafb;
+  background-image: url("/public/images/BG/PUD.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .publications-grid {
@@ -149,7 +160,7 @@
   .publications-section {
     padding: 4rem 1.5rem;
   }
-  
+
   .publications-grid {
     grid-template-columns: 1fr;
   }

@@ -1,14 +1,20 @@
 .education-section {
   padding: 6rem 2rem;
-  background-color: transparent;
+  background-color: #f9fafb;
   color: #111827;
   position: relative;
   overflow: hidden;
+  background-image: url("/public/images/BG/EL.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .dark .education-section {
-  background-color: transparent;
+  background-color: #111827;
   color: #f9fafb;
+  background-image: url("/public/images/BG/ED.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -222,6 +228,7 @@
 
 /* Responsive styles */
 @media (max-width: 1024px) {
+
   .education-item.left,
   .education-item.right {
     width: 100%;
@@ -229,11 +236,11 @@
     padding: 1.5rem 0 1.5rem 4rem;
     text-align: left;
   }
-  
+
   .education-timeline::before {
     left: 30px;
   }
-  
+
   .education-item.left .education-icon-container,
   .education-item.right .education-icon-container {
     left: 0;
@@ -241,7 +248,7 @@
     top: 2rem;
     transform: translateX(-50%);
   }
-  
+
   .education-item.left .timeline-connector,
   .education-item.right .timeline-connector {
     left: 30px;
@@ -249,7 +256,7 @@
     width: 2px;
     height: 40px;
   }
-  
+
   .education-item:last-child .timeline-connector {
     display: none;
   }
@@ -259,23 +266,23 @@
   .education-section {
     padding: 4rem 1.5rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .education-content {
     padding: 1.5rem;
   }
-  
+
   .education-degree {
     font-size: 1.125rem;
   }
-  
+
   .education-institution {
     font-size: 0.9375rem;
   }
-  
+
   .education-description {
     font-size: 0.9375rem;
   }

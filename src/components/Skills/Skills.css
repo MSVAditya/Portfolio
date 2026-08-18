@@ -1,12 +1,18 @@
 .skills-section {
   padding: 6rem 2rem;
-  background-color: transparent;
+  background-color: #f9fafb;
   color: #111827;
+  background-image: url("/public/images/BG/SL.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .dark .skills-section {
-  background-color: transparent;
+  background-color: #111827;
   color: #f9fafb;
+  background-image: url("/public/images/BG/SD.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .container {

@@ -1,12 +1,18 @@
 .projects-section {
   padding: 6rem 2rem;
-  background-color: transparent;
+  background-color: #ffffff;
   color: #111827;
+  background-image: url("/public/images/BG/PL.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .dark .projects-section {
-  background-color: transparent;
+  background-color: #111827;
   color: #f9fafb;
+  background-image: url("/public/images/BG/PD.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .container {

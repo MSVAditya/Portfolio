@@ -1,12 +1,18 @@
 .about-section {
   padding: 6rem 2rem;
-  background-color: transparent;
+  background-color: #ffffff;
   color: #111827;
+  background-image: url("/public/images/BG/AL.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .dark .about-section {
-  background-color: transparent;
+  background-color: #1f2937;
   color: #f9fafb;
+  background-image: url("/public/images/BG/AD.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .container {

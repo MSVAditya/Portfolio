@@ -105,13 +105,13 @@ const Publications = () => {
           ))}
         </div>
 
-        {publications.length > itemsToShow && !showAll && (
+        {publications.length > itemsToShow && (
           <div className="show-more-container">
             <button
-              onClick={() => setShowAll(true)}
+              onClick={() => setShowAll(!showAll)}
               className="show-more-btn"
             >
-              Show More
+              {showAll ? 'Show Less' : 'Show More'}
             </button>
           </div>
         )}

@@ -1,10 +1,16 @@
 .achievements-section {
   padding: 6rem 2rem;
-  background-color: transparent;
+  background-color: #f8f9fa;
+  background-image: url("/public/images/BG/ACL.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .dark .achievements-section {
-  background-color: transparent;
+  background-color: #1f2937;
+  background-image: url("/public/images/BG/ACD.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .section-header {
@@ -170,15 +176,15 @@
   .achievements-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .section-header {
     margin-bottom: 3rem;
   }
-  
+
   .achievement-category h3 {
     font-size: 1.5rem;
   }

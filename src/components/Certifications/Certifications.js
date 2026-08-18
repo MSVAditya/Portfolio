@@ -272,14 +272,12 @@ const Certifications = () => {
 
         {allCertifications.length > itemsToShow && (
           <div className="show-more-container">
-            {!showAll && (
-              <button
-                onClick={() => setShowAll(true)}
-                className="show-more-btn"
-              >
-                Show More
-              </button>
-            )}
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="show-more-btn"
+            >
+              {showAll ? 'Show Less' : 'Show More'}
+            </button>
 
             {showAll && (
               <button

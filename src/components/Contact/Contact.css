@@ -1,14 +1,20 @@
 .contact-section {
   padding: 6rem 2rem;
-  background-color: transparent;
+  background-color: #ffffff;
   color: #111827;
   position: relative;
   overflow: hidden;
+  background-image: url("/public/images/BG/COL.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .dark .contact-section {
-  background-color: transparent;
+  background-color: #111827;
   color: #f9fafb;
+  background-image: url("/public/images/BG/COD.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -215,8 +221,8 @@
   pointer-events: none;
 }
 
-.form-control:focus + .form-label,
-.form-control:not(:placeholder-shown) + .form-label {
+.form-control:focus+.form-label,
+.form-control:not(:placeholder-shown)+.form-label {
   top: 0.5rem;
   font-size: 0.75rem;
   color: #3b82f6;
@@ -295,7 +301,7 @@ textarea.form-control {
   .contact-container {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-info,
   .contact-form {
     padding: 1.5rem;
@@ -306,11 +312,11 @@ textarea.form-control {
   .contact-section {
     padding: 4rem 1rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .social-links {
     justify-content: center;
   }
