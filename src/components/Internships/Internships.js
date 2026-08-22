@@ -70,7 +70,7 @@ const Internships = () => {
 
         <div className="internships-grid">
           {displayedExperiences.map((exp) => (
-            <div key={exp.id} className="internship-card">
+            <div key={exp.id} className="internship-card cursor-target">
               <div className="internship-content">
                 <div className="internship-header">
                   <div className="internship-icon">
@@ -83,7 +83,7 @@ const Internships = () => {
                         href={exp.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="internship-link"
+                        className="internship-link cursor-target"
                         aria-label={`View ${exp.role} certificate`}
                       >
                         <FaExternalLinkAlt />

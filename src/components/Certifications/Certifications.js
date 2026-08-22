@@ -226,7 +226,7 @@ const Certifications = () => {
           {displayedCertifications.map((cert, index) => (
             <motion.div 
               key={cert.id} 
-              className="certification-card"
+              className="certification-card cursor-target"
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
@@ -254,7 +254,7 @@ const Certifications = () => {
                         href={cert.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="certification-link"
+                        className="certification-link cursor-target"
                         aria-label={`View ${cert.title} certification`}
                       >
                         <FaExternalLinkAlt />
@@ -274,7 +274,7 @@ const Certifications = () => {
           <div className="show-more-container">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="show-more-btn"
+              className="show-more-btn cursor-target"
             >
               {showAll ? 'Show Less' : 'Show More'}
             </button>
@@ -282,7 +282,7 @@ const Certifications = () => {
             {showAll && (
               <button
                 onClick={() => window.open('https://drive.google.com/drive/folders/1dUX_Ft9FhtCP8kyLW7KWQqdY4VkbWWyP?usp=drive_link')}
-                className="show-more-btn"
+                className="show-more-btn cursor-target"
               >
                 View all my certificates
               </button>

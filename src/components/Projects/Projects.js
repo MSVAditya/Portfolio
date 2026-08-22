@@ -110,7 +110,7 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="project-card"
+              className="project-card cursor-target"
               variants={projectVariants}
               initial="hidden"
               animate="visible"
@@ -124,7 +124,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="project-link"
+                    className="project-link cursor-target"
                     aria-label="View on GitHub"
                   >
                     <FaGithub />
@@ -133,7 +133,7 @@ const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="project-link"
+                    className="project-link cursor-target"
                     aria-label="View Live Demo"
                   >
                     <FaExternalLinkAlt />

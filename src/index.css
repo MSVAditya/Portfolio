@@ -7,10 +7,15 @@
   --bg-primary: #ffffff;
   --bg-secondary: #f9fafb;
   --border-color: #e5e7eb;
+  --page-background: var(--bg-secondary);
+  --card-background: var(--bg-primary);
+  --card-border: var(--border-color);
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --card-shadow: var(--shadow);
+  --card-shadow-hover: var(--shadow-md);
   --transition: all 0.3s ease;
   --border-radius: 0.5rem;
   --border-radius-lg: 0.75rem;
@@ -25,10 +30,15 @@
   --bg-primary: #111827;
   --bg-secondary: #1f2937;
   --border-color: #374151;
+  --page-background: var(--bg-primary);
+  --card-background: var(--bg-secondary);
+  --card-border: var(--border-color);
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  --card-shadow: var(--shadow);
+  --card-shadow-hover: var(--shadow-md);
 }
 
 /* Base styles */
@@ -56,7 +66,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   color: var(--text-primary);
-  background-color: var(--bg-primary);
+  background-color: var(--page-background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -119,6 +129,8 @@ img {
   max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 section {

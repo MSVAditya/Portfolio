@@ -147,24 +147,26 @@ const Home = () => {
                 to="projects"
                 smooth={true}
                 duration={500}
-                className="cta-button primary"
+                className="cta-button primary cursor-target"
                 aria-label="View my projects"
               >
                 View My Work
               </Link>
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-linkbyme"
-                  aria-label={social.ariaLabel}
-                  data-tooltip={social.name}
-                >
-                  {social.icon}
-                </a>
-              ))}
+              <div className="hero-social-links">
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-linkbyme cursor-target"
+                    aria-label={social.ariaLabel}
+                    data-tooltip={social.name}
+                  >
+                    {social.icon}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -190,7 +192,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, type: 'spring', stiffness: 100 }}
       >
-        <Link to="about" smooth={true} duration={500} className="scroll-link">
+        <Link to="about" smooth={true} duration={500} className="scroll-link cursor-target">
           <span className="scroll-text">Scroll Down</span>
           <span className="scroll-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

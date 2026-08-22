@@ -127,7 +127,7 @@ const Contact = () => {
                 >
                   <a 
                     href={item.link} 
-                    className="contact-info-link"
+                    className="contact-info-link cursor-target"
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -189,7 +189,7 @@ const Contact = () => {
 
             <button 
               type="submit" 
-              className="submit-btn"
+              className="submit-btn cursor-target"
               disabled={formStatus.submitting}
             >
               {formStatus.submitting ? (

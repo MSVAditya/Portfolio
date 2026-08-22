@@ -14,6 +14,8 @@ import Certifications from './components/Certifications/Certifications';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
+import TargetCursor from './components/TargetCursor/TargetCursor';
+import Particles from './components/Particles/Particles';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -78,6 +80,12 @@ function App() {
   return (
     <ThemeProvider>
       <div className="app">
+        <TargetCursor
+            spinDuration={2}
+            hideDefaultCursor={true}
+            hoverDuration={0.2}
+            parallaxOn={true}
+        />
         <Navbar activeSection={activeSection} />
         <main>
           <div ref={homeRef}><Home id="home" /></div>
@@ -92,6 +100,22 @@ function App() {
           <div ref={contactRef}><Contact id="contact" /></div>
         </main>
         <Footer />
+        <div className="particles-background">
+          <Particles
+            particleColors={["#ffffff", "#60a5fa", "#2563eb"]}
+            particleCount={300}
+            particleSpread={10}
+            speed={0.08}
+            particleBaseSize={80}
+            moveParticlesOnHover={true}
+            particleHoverFactor={1}
+            alphaParticles={true}
+            sizeRandomness={1}
+            cameraDistance={20}
+            disableRotation={false}
+            pixelRatio={1}
+          />
+        </div>
       </div>
     </ThemeProvider>
   );

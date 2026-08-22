@@ -57,7 +57,7 @@ const Publications = () => {
           {displayedPublications.map((pub, index) => (
             <motion.div
               key={pub.id}
-              className="publication-card"
+              className="publication-card cursor-target"
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
@@ -91,7 +91,7 @@ const Publications = () => {
                   href={pub.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="publication-link-btn"
+                  className="publication-link-btn cursor-target"
                   aria-label="View Publication"
                   onClick={(e) => {
                     if (pub.link === '#') e.preventDefault();
@@ -109,7 +109,7 @@ const Publications = () => {
           <div className="show-more-container">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="show-more-btn"
+              className="show-more-btn cursor-target"
             >
               {showAll ? 'Show Less' : 'Show More'}
             </button>

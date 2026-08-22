@@ -1,18 +1,18 @@
 .certifications-section {
   padding: 4rem 0;
-  background-color: #f8fafc;
+  background-color: var(--page-background);
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("/public/images/BG/CL.jpg");
+  /* background-image: url("/public/images/BG/CL.jpg"); */
   background-size: cover;
   background-position: center;
 }
 
 .dark .certifications-section {
-  background-color: #0f172a;
+  background-color: var(--page-background);
   color: #f1f5f9;
-  background-image: url("/public/images/BG/CD.jpg");
+  /* background-image: url("/public/images/BG/CD.jpg"); */
   background-size: cover;
   background-position: center;
 }
@@ -68,10 +68,11 @@
 }
 
 .certification-card {
-  background-color: #ffffff;
-  border-radius: 0.75rem;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -79,13 +80,14 @@
 }
 
 .dark .certification-card {
-  background-color: #1e293b;
-  border: 1px solid #334155;
+  background-color: var(--card-background);
+  border-color: var(--card-border);
+  box-shadow: var(--card-shadow);
 }
 
 .certification-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .certification-image {

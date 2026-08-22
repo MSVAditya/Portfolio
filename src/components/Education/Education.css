@@ -1,18 +1,18 @@
 .education-section {
   padding: 6rem 2rem;
-  background-color: #f9fafb;
+  background-color: var(--page-background);
   color: #111827;
   position: relative;
   overflow: hidden;
-  background-image: url("/public/images/BG/EL.jpg");
+  /* background-image: url("/public/images/BG/EL.jpg"); */
   background-size: cover;
   background-position: center;
 }
 
 .dark .education-section {
-  background-color: #111827;
+  background-color: var(--page-background);
   color: #f9fafb;
-  background-image: url("/public/images/BG/ED.jpg");
+  /* background-image: url("/public/images/BG/ED.jpg"); */
   background-size: cover;
   background-position: center;
 }
@@ -103,26 +103,28 @@
 }
 
 .education-content {
-  background-color: #ffffff;
-  border-radius: 0.75rem;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius-lg);
   padding: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .dark .education-content {
-  background-color: #1f2937;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  background-color: var(--card-background);
+  border-color: var(--card-border);
+  box-shadow: var(--card-shadow);
 }
 
 .education-item:hover .education-content {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .dark .education-item:hover .education-content {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .education-icon-container {

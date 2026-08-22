@@ -93,7 +93,7 @@ const Footer = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`social-link ${social.name.toLowerCase()}`}
+                    className={`social-link ${social.name.toLowerCase()} cursor-target`}
                     aria-label={social.ariaLabel}
                     whileHover={{ y: -3 }}
                     variants={itemVariants}
@@ -120,7 +120,7 @@ const Footer = () => {
                     >
                       <a 
                         href={link.url} 
-                        className="footer-link"
+                        className="footer-link cursor-target"
                         target={link.url.startsWith('http') ? '_blank' : '_self'}
                         rel={link.url.startsWith('http') ? 'noopener noreferrer' : ''}
                       >

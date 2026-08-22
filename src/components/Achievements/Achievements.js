@@ -2,7 +2,7 @@ import React from 'react';
 import './Achievements.css';
 
 const AchievementCard = ({ title, description, certificateLink }) => (
-  <div className="achievement-card">
+  <div className="achievement-card cursor-target">
     <h3>{title}</h3>
     <p>{description}</p>
     {certificateLink && (
@@ -10,7 +10,7 @@ const AchievementCard = ({ title, description, certificateLink }) => (
         href={certificateLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="certificate-link"
+        className="certificate-link cursor-target"
       >
         View Certificate
       </a>
@@ -22,39 +22,39 @@ const Achievements = () => {
   const academicAchievements = [
     {
       id: 1,
-      title: 'Praveshika Examination',
-      description: 'Achieved second-class distinction in the Praveshika examination, showcasing strong proficiency in the subject.',
-      certificateLink: 'https://drive.google.com/file/d/1SLiRhqMSAFQG-WpU9GwuhFw43NnrmkCx/view?usp=sharing'
-    },
-    {
-      id: 1,
-      title: 'Rashtrabhasha Examination',
-      description: 'Secured second-class in the Rashtrabhasha examination, demonstrating a good command of the Hindi language.',
-      certificateLink: 'https://drive.google.com/file/d/1wOYkqEpS1jpZ7is-ekicwFQ6XwoNZwOP/view?usp=sharing'
-    },
-    {
-      id: 3,
       title: 'India-Level Mathematics Olympiad',
       description: 'Recognized for exceptional problem-solving skills at a national-level mathematics competition.',
       certificateLink: 'https://drive.google.com/file/d/1bdRR7L--nPcdcZsH0MsKLRcHuCLc6Mdo/view?usp=sharing'
     },
     {
-      id: 4,
+      id: 2,
       title: '8-Hour Hackathon [Java Full Stack]',
       description: 'Won first place in a competitive hackathon, showcasing full-stack development expertise under time constraints.',
       certificateLink: 'https://drive.google.com/file/d/1m8YPTftA9wGwWQw4y_bZli9jickrCosX/view?usp=sharing'
     },
     {
-      id: 5,
+      id: 3,
       title: 'GEN-AI Jams by GDG',
       description: 'Successfully participated in AI-focused coding jams conducted by Google Developer Group, enhancing AI and coding skills.',
       certificateLink: 'https://drive.google.com/file/d/1kvfAQtBTIccpBZc56lJ2dbiVix8kAy8A/view?usp=sharing'
     },
     {
-      id: 6,
+      id: 4,
       title: 'MLSA – Web Development Team Member',
       description: 'Successfully served as a Web Developer in the MLSA Club at Prasad V. Potluri Siddhartha Institute of Technology, contributing to web development initiatives and student technology activities.',
       certificateLink: 'https://drive.google.com/file/d/1ICA3jFW7FuR3vb1a5E73ZuXHCtrujd1m/view?usp=sharing'
+    },
+    {
+      id: 5,
+      title: 'Praveshika Examination',
+      description: 'Achieved second-class distinction in the Praveshika examination, showcasing strong proficiency in the subject.',
+      certificateLink: 'https://drive.google.com/file/d/1SLiRhqMSAFQG-WpU9GwuhFw43NnrmkCx/view?usp=sharing'
+    },
+    {
+      id: 6,
+      title: 'Rashtrabhasha Examination',
+      description: 'Secured second-class in the Rashtrabhasha examination, demonstrating a good command of the Hindi language.',
+      certificateLink: 'https://drive.google.com/file/d/1wOYkqEpS1jpZ7is-ekicwFQ6XwoNZwOP/view?usp=sharing'
     },
   ];
 

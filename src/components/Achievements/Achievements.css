@@ -1,14 +1,14 @@
 .achievements-section {
   padding: 6rem 2rem;
-  background-color: #f8f9fa;
-  background-image: url("/public/images/BG/ACL.jpg");
+  background-color: var(--page-background);
+  /* background-image: url("/public/images/BG/ACL.jpg"); */
   background-size: cover;
   background-position: center;
 }
 
 .dark .achievements-section {
-  background-color: #1f2937;
-  background-image: url("/public/images/BG/ACD.jpg");
+  background-color: var(--page-background);
+  /* background-image: url("/public/images/BG/ACD.jpg"); */
   background-size: cover;
   background-position: center;
 }
@@ -89,10 +89,11 @@
 }
 
 .achievement-card {
-  background: white;
-  border-radius: 10px;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius-lg);
   padding: 1.8rem 1.8rem 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
   display: flex;
@@ -102,14 +103,15 @@
 }
 
 .dark .achievement-card {
-  background: #374151;
+  background-color: var(--card-background);
   color: #f9fafb;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-color: var(--card-border);
+  box-shadow: var(--card-shadow);
 }
 
 .achievement-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .achievement-card h3 {

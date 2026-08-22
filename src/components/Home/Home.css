@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 6rem 2rem 4rem;
-  background-color: #f9fafb;
-  background-image: url("/public/images/BG/HL.jpg");
+  background-color: var(--page-background);
+  /* background-image: url("/public/images/BG/HL.jpg"); */
   background-size: cover;
   background-position: center;
   color: #111827;
@@ -14,8 +14,8 @@
 }
 
 .dark .home-section {
-  background-color: #111827;
-  background-image: url("/public/images/BG/HD.jpg");
+  background-color: var(--page-background);
+  /* background-image: url("/public/images/BG/HD.jpg"); */
   background-size: cover;
   background-position: center;
 
@@ -85,8 +85,16 @@
 
 .cta-buttons {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .cta-button {
@@ -267,7 +275,12 @@
 
   .cta-buttons {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+  }
+
+  .hero-social-links {
+    justify-content: center;
+    width: 100%;
   }
 
   .cta-button {
@@ -293,9 +306,42 @@
 }
 
 .social-linkbyme {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   transition: all 0.3s ease;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+}
+
+/* Hover Tooltip */
+.social-linkbyme::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background-color: var(--card-background);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-lg);
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--card-border);
+  z-index: 20;
+  pointer-events: none;
+}
+
+.social-linkbyme:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 
 .social-linkbyme:hover {

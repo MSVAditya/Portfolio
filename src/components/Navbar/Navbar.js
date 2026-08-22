@@ -23,7 +23,7 @@ const Navbar = ({ activeSection }) => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo">
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500} className="cursor-target">
             MSV's Portfolio
           </Link>
         </div>
@@ -35,7 +35,7 @@ const Navbar = ({ activeSection }) => {
               to={item.id}
               smooth={true}
               duration={500}
-              className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
+              className={`nav-link ${activeSection === item.id ? 'active' : ''} cursor-target`}
               spy={true}
               offset={-70}
             >
@@ -44,7 +44,7 @@ const Navbar = ({ activeSection }) => {
           ))}
         </div>
 
-        <button onClick={toggleTheme} className="theme-toggle">
+        <button onClick={toggleTheme} className="theme-toggle cursor-target">
           {isDarkMode ? '☀️' : '🌙'}
         </button>
       </div>

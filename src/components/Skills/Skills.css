@@ -1,16 +1,16 @@
 .skills-section {
   padding: 6rem 2rem;
-  background-color: #f9fafb;
+  background-color: var(--page-background);
   color: #111827;
-  background-image: url("/public/images/BG/SL.jpg");
+  /* background-image: url("/public/images/BG/SL.jpg"); */
   background-size: cover;
   background-position: center;
 }
 
 .dark .skills-section {
-  background-color: #111827;
+  background-color: var(--page-background);
   color: #f9fafb;
-  background-image: url("/public/images/BG/SD.jpg");
+  /* background-image: url("/public/images/BG/SD.jpg"); */
   background-size: cover;
   background-position: center;
 }
@@ -63,25 +63,27 @@
 }
 
 .category {
-  background-color: #ffffff;
-  border-radius: 0.75rem;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius-lg);
   padding: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .dark .category {
-  background-color: #1f2937;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  background-color: var(--card-background);
+  border-color: var(--card-border);
+  box-shadow: var(--card-shadow);
 }
 
 .category:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .dark .category:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .category-title {
@@ -171,8 +173,13 @@
 }
 
 @keyframes progress {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 .skill-percent {
@@ -198,15 +205,15 @@
   .skills-section {
     padding: 4rem 1.5rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .category {
     padding: 1.5rem;
   }

@@ -1,16 +1,16 @@
 .about-section {
   padding: 6rem 2rem;
-  background-color: #ffffff;
+  background-color: var(--page-background);
   color: #111827;
-  background-image: url("/public/images/BG/AL.jpg");
+  /* background-image: url("/public/images/BG/AL.jpg"); */
   background-size: cover;
   background-position: center;
 }
 
 .dark .about-section {
-  background-color: #1f2937;
+  background-color: var(--page-background);
   color: #f9fafb;
-  background-image: url("/public/images/BG/AD.jpg");
+  /* background-image: url("/public/images/BG/AD.jpg"); */
   background-size: cover;
   background-position: center;
 }
@@ -161,7 +161,7 @@
     flex-direction: column;
     gap: 3rem;
   }
-  
+
   .skills-preview {
     width: 100%;
   }
@@ -171,15 +171,15 @@
   .about-section {
     padding: 4rem 1.5rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .personal-info {
     grid-template-columns: 1fr;
   }
-  
+
   .skills-preview {
     padding: 1.5rem;
   }
